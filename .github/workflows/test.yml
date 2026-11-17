@@ -5,6 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Create .env for CI
+        run: |
+          echo "BASE_URL=https://frontend-production-e51e.up.railway.app/" >> .env
+          echo "API_BASE_URL=https://backend-production-a65a.up.railway.app/api" >> .env
+          echo "TEST_EMAIL=test@example.com" >> .env
+          echo "TEST_PASSWORD=Test@1234" >> .env
+          echo "TEST_PHONE=9876543210" >> .env
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
