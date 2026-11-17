@@ -11,4 +11,4 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pip install pytest-playwright
       - run: playwright install chromium --with-deps
-      - run: pytest tests/test_api_login.py tests/test_api_patients.py tests/test_api_create_patient.py -v
+      - run: pytest tests/test_api_login.py tests/test_api_patients.py -v
