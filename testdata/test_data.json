@@ -1,0 +1,12 @@
+{
+  "valid_patient": {
+    "name": "Test Patient",
+    "phone": "9876543210",
+    "age": 25,
+    "gender": "Male"
+  },
+  "valid_login": {
+    "email": "test.qjars@gmail.com",
+    "password": "Test@1234"
+  }
+}
